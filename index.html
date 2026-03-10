@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamori - 일본 생활 방어 도구</title>
+  <meta name="description" content="일본에서 살아남기 위한 AI 도구 모음. 전화 코칭, 퇴거비 판별, 계약서 체크까지.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="ambient">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+  </div>
+
+  <div class="container">
+
+    <nav class="nav">
+      <div class="nav-brand">
+        <div class="logo">
+          <svg width="32" height="32" viewBox="0 0 48 48" fill="none">
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="0" x2="48" y2="48">
+                <stop offset="0%" stop-color="#59c1ff"/>
+                <stop offset="50%" stop-color="#9e78ff"/>
+                <stop offset="100%" stop-color="#2ce5b5"/>
+              </linearGradient>
+            </defs>
+            <rect width="48" height="48" rx="14" fill="url(#logo-grad)"/>
+            <path d="M16 30c-1-8 4-15 8-15s9 7 8 15" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+            <path d="M12 28c-1-10 5-18 12-18s13 8 12 18" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+            <circle cx="24" cy="32" r="2.5" fill="#fff"/>
+          </svg>
+        </div>
+        <span class="brand-name">Mamori</span>
+      </div>
+      <div class="lang-switch" role="radiogroup" aria-label="Language">
+        <button type="button" class="lang-btn active" data-lang="ko">🇰🇷</button>
+        <button type="button" class="lang-btn" data-lang="ja">🇯🇵</button>
+        <button type="button" class="lang-btn" data-lang="en">🇺🇸</button>
+        <button type="button" class="lang-btn" data-lang="zh">🇨🇳</button>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <p class="hero-kicker" data-i18n="kicker">일본 생활 방어 도구</p>
+      <h1>
+        <span data-i18n="headline1">일본에서 살아남기,</span><br>
+        <span class="gradient-text" data-i18n="headline2">이제 AI가 도와줍니다</span>
+      </h1>
+      <p class="hero-desc" data-i18n="description">전화가 무서워도, 청구서가 이상해도, 계약서를 못 읽어도. Mamori가 옆에서 하나씩 해결합니다.</p>
+    </header>
+
+    <section class="tools">
+      <p class="section-label" data-i18n="toolsLabel">도구 모음</p>
+      <div class="tools-grid">
+
+        <a href="https://minnanotasuke.onrender.com" class="tool-card tool-card-live" target="_blank" rel="noopener">
+          <div class="tool-status"><span class="status-dot live"></span> <span data-i18n="statusLive">사용 가능</span></div>
+          <div class="tool-icon-wrap tool-icon-blue">📞</div>
+          <h2 class="tool-name" data-i18n="tool1Name">전화 코칭</h2>
+          <p class="tool-desc" data-i18n="tool1Desc">일본어 전화를 AI가 실시간으로 옆에서 도와줍니다. 상대방 말을 텍스트로 보여주고, 다음에 할 말을 제안합니다.</p>
+          <div class="tool-tags">
+            <span class="tag" data-i18n="tagRealtime">실시간</span>
+            <span class="tag" data-i18n="tagAI">AI 코칭</span>
+            <span class="tag" data-i18n="tagVoice">음성 인식</span>
+          </div>
+          <span class="tool-arrow">→</span>
+        </a>
+
+        <div class="tool-card tool-card-soon">
+          <div class="tool-status"><span class="status-dot soon"></span> <span data-i18n="statusSoon">개발 중</span></div>
+          <div class="tool-icon-wrap tool-icon-red">🧾</div>
+          <h2 class="tool-name" data-i18n="tool2Name">퇴거비 체커</h2>
+          <p class="tool-desc" data-i18n="tool2Desc">퇴거 시 청구서 사진을 찍으면 부당한 항목을 판별합니다. 국토교통성 가이드라인 기반.</p>
+          <div class="tool-tags">
+            <span class="tag" data-i18n="tagPhoto">사진 분석</span>
+            <span class="tag" data-i18n="tagLaw">법적 근거</span>
+          </div>
+        </div>
+
+        <div class="tool-card tool-card-soon">
+          <div class="tool-status"><span class="status-dot soon"></span> <span data-i18n="statusSoon">개발 중</span></div>
+          <div class="tool-icon-wrap tool-icon-green">📄</div>
+          <h2 class="tool-name" data-i18n="tool3Name">계약서 체커</h2>
+          <p class="tool-desc" data-i18n="tool3Desc">임대 계약서의 불리한 조항을 자동으로 찾아냅니다.</p>
+          <div class="tool-tags">
+            <span class="tag" data-i18n="tagPhoto">사진 분석</span>
+            <span class="tag" data-i18n="tagContract">계약 검토</span>
+          </div>
+        </div>
+
+        <div class="tool-card tool-card-soon">
+          <div class="tool-status"><span class="status-dot soon"></span> <span data-i18n="statusSoon">개발 중</span></div>
+          <div class="tool-icon-wrap tool-icon-purple">✉️</div>
+          <h2 class="tool-name" data-i18n="tool4Name">해지 메일 생성기</h2>
+          <p class="tool-desc" data-i18n="tool4Desc">NHK, 불필요한 구독 서비스 등을 해지하는 일본어 비즈니스 메일을 자동 생성합니다.</p>
+          <div class="tool-tags">
+            <span class="tag" data-i18n="tagMail">메일 생성</span>
+            <span class="tag" data-i18n="tagBusiness">비즈니스 일본어</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="why">
+      <p class="section-label" data-i18n="whyLabel">왜 Mamori인가</p>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">🌏</div>
+          <h3 data-i18n="why1Title">언어 장벽 해소</h3>
+          <p data-i18n="why1Desc">일본어를 못해도 필수적인 일을 처리할 수 있습니다</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">⚖️</div>
+          <h3 data-i18n="why2Title">부당 청구 방어</h3>
+          <p data-i18n="why2Desc">법적 근거를 기반으로 불합리한 비용을 걸러냅니다</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔒</div>
+          <h3 data-i18n="why3Title">프라이버시</h3>
+          <p data-i18n="why3Desc">녹음 없음. 데이터 저장 없음. 안심하고 사용하세요</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p class="footer-text" data-i18n="footer">Mamori - 일본에서 살아가는 외국인을 위한 AI 도구</p>
+    </footer>
+
+  </div>
+
+  <script src="i18n.js"></script>
+</body>
+</html>

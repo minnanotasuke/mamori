@@ -1,0 +1,15 @@
+<svg width="256" height="256" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="48" y2="48">
+      <stop offset="0%" stop-color="#59c1ff"/>
+      <stop offset="50%" stop-color="#9e78ff"/>
+      <stop offset="100%" stop-color="#2ce5b5"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square -->
+  <rect width="48" height="48" rx="14" fill="url(#g3)"/>
+  <!-- Abstract embrace/protect: two curved arms wrapping around a dot -->
+  <path d="M16 30c-1-8 4-15 8-15s9 7 8 15" stroke="#fff" stroke-width="2.4" stroke-linecap="round" fill="none"/>
+  <path d="M12 28c-1-10 5-18 12-18s13 8 12 18" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.5"/>
+  <circle cx="24" cy="32" r="2.5" fill="#fff"/>
+</svg>
