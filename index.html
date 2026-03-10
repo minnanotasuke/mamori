@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mamori - 일본 생활 방어 도구</title>
-  <meta name="description" content="일본에서 살아남기 위한 AI 도구 모음. 전화 코칭, 퇴거비 판별, 계약서 체크까지.">
+  <title>Mamori - 일본어 전화, AI가 도와줍니다</title>
+  <meta name="description" content="일본어 전화가 무서운 외국인을 위한 AI 코칭. 상대방 말을 텍스트로 보여주고, 다음에 할 말을 제안합니다.">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -46,43 +46,42 @@
     </nav>
 
     <header class="hero">
-      <p class="hero-kicker" data-i18n="kicker">일본 생활 방어 도구</p>
+      <p class="hero-kicker" data-i18n="kicker">AI 전화 코칭</p>
       <h1>
-        <span data-i18n="headline1">일본에서 살아남기,</span><br>
-        <span class="gradient-text" data-i18n="headline2">이제 AI가 도와줍니다</span>
+        <span data-i18n="headline1">일본어 전화가 무서울 때,</span><br>
+        <span class="gradient-text" data-i18n="headline2">AI가 옆에서 도와줍니다</span>
       </h1>
-      <p class="hero-desc" data-i18n="description">전화가 무서워도, 청구서가 이상해도, 계약서를 못 읽어도. Mamori가 옆에서 하나씩 해결합니다.</p>
+      <p class="hero-desc" data-i18n="description">상대방 말을 실시간으로 텍스트로 보여주고, 다음에 할 말을 제안합니다. 가스 개통, 병원 예약, 배달 문의까지.</p>
     </header>
 
-    <section class="tools">
-      <p class="section-label" data-i18n="toolsLabel">도구 모음</p>
-      <div class="tools-grid">
-
-        <a href="https://minnanotasuke.onrender.com" class="tool-card tool-card-live" target="_blank" rel="noopener">
-          <div class="tool-status"><span class="status-dot live"></span> <span data-i18n="statusLive">사용 가능</span></div>
-          <div class="tool-icon-wrap tool-icon-blue">📞</div>
-          <h2 class="tool-name" data-i18n="tool1Name">전화 코칭</h2>
-          <p class="tool-desc" data-i18n="tool1Desc">일본어 전화를 AI가 실시간으로 옆에서 도와줍니다. 상대방 말을 텍스트로 보여주고, 다음에 할 말을 제안합니다.</p>
-          <div class="tool-tags">
-            <span class="tag" data-i18n="tagRealtime">실시간</span>
-            <span class="tag" data-i18n="tagAI">AI 코칭</span>
-            <span class="tag" data-i18n="tagVoice">음성 인식</span>
+    <section class="features">
+      <div class="feature-card feature-card-main">
+        <div class="feature-icon">📞</div>
+        <h2 data-i18n="featureTitle">이렇게 작동합니다</h2>
+        <div class="feature-steps">
+          <div class="feature-step">
+            <div class="step-num">1</div>
+            <div>
+              <strong data-i18n="step1Title">전화 목적 입력</strong>
+              <p data-i18n="step1Desc">가스 개통, 병원 예약 등 목적을 입력하면 AI가 상황에 맞는 코칭을 준비합니다</p>
+            </div>
           </div>
-          <span class="tool-arrow">→</span>
-        </a>
-
-        <div class="tool-card tool-card-soon">
-          <div class="tool-status"><span class="status-dot soon"></span> <span data-i18n="statusSoon">개발 중</span></div>
-          <div class="tool-icon-wrap tool-icon-red">🧾</div>
-          <h2 class="tool-name" data-i18n="tool2Name">퇴거비 체커</h2>
-          <p class="tool-desc" data-i18n="tool2Desc">퇴거 시 청구서 사진을 찍으면 부당한 항목을 판별합니다. 국토교통성 가이드라인 기반.</p>
-          <div class="tool-tags">
-            <span class="tag" data-i18n="tagPhoto">사진 분석</span>
-            <span class="tag" data-i18n="tagLaw">법적 근거</span>
+          <div class="feature-step">
+            <div class="step-num">2</div>
+            <div>
+              <strong data-i18n="step2Title">AI가 전화를 걸어줍니다</strong>
+              <p data-i18n="step2Desc">번호를 입력하면 브라우저에서 바로 전화가 연결됩니다</p>
+            </div>
+          </div>
+          <div class="feature-step">
+            <div class="step-num">3</div>
+            <div>
+              <strong data-i18n="step3Title">실시간 코칭</strong>
+              <p data-i18n="step3Desc">상대방 말이 텍스트로 표시되고, AI가 다음에 할 말을 제안합니다</p>
+            </div>
           </div>
         </div>
-
-
+        <a href="https://minnanotasuke.onrender.com" class="btn-start" data-i18n="ctaButton">지금 시작하기 →</a>
       </div>
     </section>
 
@@ -92,12 +91,12 @@
         <div class="why-card">
           <div class="why-icon">🌏</div>
           <h3 data-i18n="why1Title">언어 장벽 해소</h3>
-          <p data-i18n="why1Desc">일본어를 못해도 필수적인 일을 처리할 수 있습니다</p>
+          <p data-i18n="why1Desc">일본어를 못해도 필수적인 전화를 처리할 수 있습니다</p>
         </div>
         <div class="why-card">
-          <div class="why-icon">⚖️</div>
-          <h3 data-i18n="why2Title">부당 청구 방어</h3>
-          <p data-i18n="why2Desc">법적 근거를 기반으로 불합리한 비용을 걸러냅니다</p>
+          <div class="why-icon">🎯</div>
+          <h3 data-i18n="why2Title">실시간 코칭</h3>
+          <p data-i18n="why2Desc">통역이 아닌 코칭. 내가 직접 말하면서 AI가 도와줍니다</p>
         </div>
         <div class="why-card">
           <div class="why-icon">🔒</div>
@@ -107,8 +106,25 @@
       </div>
     </section>
 
+    <section class="use-cases">
+      <p class="section-label" data-i18n="useCasesLabel">이런 상황에서 쓰세요</p>
+      <div class="use-cases-grid">
+        <div class="use-case-chip" data-i18n="useCase1">🏥 병원 예약</div>
+        <div class="use-case-chip" data-i18n="useCase2">🔥 가스/전기 개통</div>
+        <div class="use-case-chip" data-i18n="useCase3">📦 배달 재배달</div>
+        <div class="use-case-chip" data-i18n="useCase4">🏠 부동산 문의</div>
+        <div class="use-case-chip" data-i18n="useCase5">📱 인터넷 계약</div>
+        <div class="use-case-chip" data-i18n="useCase6">🏦 은행 문의</div>
+      </div>
+    </section>
+
+    <div class="cta-bottom">
+      <a href="https://minnanotasuke.onrender.com" class="btn-start" data-i18n="ctaButton">지금 시작하기 →</a>
+      <p class="cta-sub" data-i18n="ctaSub">무료. 회원가입 불필요.</p>
+    </div>
+
     <footer class="footer">
-      <p class="footer-text" data-i18n="footer">Mamori - 일본에서 살아가는 외국인을 위한 AI 도구</p>
+      <p class="footer-text" data-i18n="footer">Mamori - 일본에서 살아가는 외국인을 위한 AI 전화 코칭</p>
     </footer>
 
   </div>
