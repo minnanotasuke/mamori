@@ -377,6 +377,12 @@ h1 {
   text-decoration: underline;
 }
 
+.footer-sep {
+  color: var(--text-dim);
+  opacity: 0.4;
+  margin: 0 4px;
+}
+
 /* --- Animations --- */
 @keyframes glow-drift {
   0%, 100% { transform: translate(0, 0) scale(1); }
