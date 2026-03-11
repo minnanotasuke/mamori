@@ -362,6 +362,21 @@ h1 {
   color: var(--text-dim);
 }
 
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+
 /* --- Animations --- */
 @keyframes glow-drift {
   0%, 100% { transform: translate(0, 0) scale(1); }

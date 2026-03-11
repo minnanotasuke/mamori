@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Mamori</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .policy { max-width: 680px; margin: 0 auto; padding: 60px 20px 80px; }
+    .policy h1 { font-size: 1.8rem; margin-bottom: 8px; }
+    .policy .updated { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 40px; }
+    .policy h2 { font-size: 1.1rem; margin-top: 32px; margin-bottom: 8px; color: var(--text); }
+    .policy p, .policy li { color: var(--text-sub); font-size: 0.92rem; line-height: 1.7; }
+    .policy ul { padding-left: 20px; margin-top: 8px; }
+    .policy li { margin-bottom: 6px; }
+    .policy a { color: var(--accent-blue); text-decoration: none; }
+    .policy a:hover { text-decoration: underline; }
+    .back-link { display: inline-block; margin-bottom: 24px; color: var(--accent-blue); text-decoration: none; font-size: 0.88rem; font-weight: 600; }
+    .back-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="policy">
+    <a href="/" class="back-link">&larr; Back to Mamori</a>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: March 11, 2026</p>
+
+    <h2>1. Overview</h2>
+    <p>Mamori ("we", "our", "the service") provides AI-powered phone call coaching for foreigners living in Japan. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights.</p>
+
+    <h2>2. Data We Collect</h2>
+    <p>We collect the minimum data necessary to provide the service.</p>
+    <ul>
+      <li><strong>Phone number you dial</strong> - Used only to connect your call via Twilio. Not stored on our servers after the call ends.</li>
+      <li><strong>Call purpose text</strong> - The short description you enter (e.g., "gas setup"). Used during the call to provide relevant coaching. Not stored after the session ends.</li>
+      <li><strong>Voice audio (during call only)</strong> - Streamed in real time to Deepgram for transcription. Not recorded or stored.</li>
+      <li><strong>Transcript text (during call only)</strong> - Sent to OpenAI for coaching suggestions. Not stored after the session ends.</li>
+      <li><strong>IP address</strong> - Used for rate limiting to prevent abuse. Not linked to any personal information. Cleared periodically.</li>
+    </ul>
+
+    <h2>3. Data We Do NOT Collect</h2>
+    <ul>
+      <li>We do not record calls</li>
+      <li>We do not store transcripts after the session ends</li>
+      <li>We do not require account creation or login</li>
+      <li>We do not use cookies for tracking</li>
+      <li>We do not sell or share personal data with advertisers</li>
+    </ul>
+
+    <h2>4. Third-Party Services</h2>
+    <p>We use the following third-party services to provide functionality:</p>
+    <ul>
+      <li><strong>Twilio</strong> - Phone call connection. Twilio may retain call metadata (duration, phone numbers) per their own <a href="https://www.twilio.com/legal/privacy" target="_blank" rel="noopener">privacy policy</a>.</li>
+      <li><strong>Deepgram</strong> - Real-time speech-to-text. Audio is streamed and not stored. See their <a href="https://deepgram.com/privacy" target="_blank" rel="noopener">privacy policy</a>.</li>
+      <li><strong>OpenAI</strong> - AI coaching and summary generation. Text is sent via API and not used for model training per their API data usage policy. See their <a href="https://openai.com/policies/privacy-policy" target="_blank" rel="noopener">privacy policy</a>.</li>
+      <li><strong>Cloudflare</strong> - Hosting and basic web analytics (page views, country). No personal data is collected. See their <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener">privacy policy</a>.</li>
+    </ul>
+
+    <h2>5. Data Retention</h2>
+    <p>All session data (transcripts, coaching history, call purpose) is held in server memory only during the active call and is automatically deleted within 10 minutes after the call ends. We do not maintain any database of user activity.</p>
+
+    <h2>6. Security</h2>
+    <ul>
+      <li>All connections are encrypted via HTTPS/WSS</li>
+      <li>API endpoints are protected with session-based keys and rate limiting</li>
+      <li>Emergency numbers (110, 119, etc.) are blocked</li>
+      <li>Calls are limited to 5 minutes maximum</li>
+      <li>Daily usage limits are enforced to prevent abuse</li>
+    </ul>
+
+    <h2>7. Your Rights</h2>
+    <p>Since we do not store personal data beyond the active session, there is no persistent data to access, modify, or delete. If you have concerns about your data, please contact us.</p>
+
+    <h2>8. Children</h2>
+    <p>This service is not intended for use by children under 13 years of age.</p>
+
+    <h2>9. Changes</h2>
+    <p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+    <h2>10. Contact</h2>
+    <p>For any privacy-related questions, please reach out via our <a href="https://github.com/minnanotasuke/minnanotasuke/issues" target="_blank" rel="noopener">GitHub repository</a>.</p>
+  </div>
+</body>
+</html>
